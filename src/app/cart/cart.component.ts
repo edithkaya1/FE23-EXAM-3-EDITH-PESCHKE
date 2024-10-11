@@ -10,10 +10,12 @@ import { CartService } from '../cart.service';
 export class CartComponent {
   productsFromCart: ProductsModel[];
   total: number;
+  discount: number;
   constructor(private cartService: CartService) {
     this.productsFromCart = cartService.getProducts();
     console.log(this.productsFromCart);
-    this.total = cartService.getTotal()
+    this.total = cartService.getTotal();
+    this.discount = cartService.getDiscount();
   }
 
   increaseQutty(index:number): void{
@@ -35,4 +37,8 @@ export class CartComponent {
     this.total = this.cartService.getTotal()
   }
 
+  calcDiscount(): void{
+    this.discount = this.cartService.getDiscount()
+  }
+  
 }

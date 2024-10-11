@@ -1,8 +1,8 @@
 <div class="container-fluid cont-1">
-    <h3 class=" header text-center">Your shopping list</h3>
+    <h3 class=" header text-center">Your shopping basket</h3>
     @for(product of productsFromCart; track $index)
     {
-    <div class='row d-flex align-items-center shop mx-4'>
+    <div class='row d-flex align-items-center cart mx-4'>
         <div class='col-2'>
             <img [src]="product.img" class='img-fluid cart-img' alt='this is an image'>
         </div>
@@ -20,9 +20,27 @@
         <div class='col-1 text-end'>
             <button (click)="deleteItem($index)" class='btn btn-danger deleteBtns'><i class="fa-solid fa-trash"></i></button>
         </div>
-        <hr>
+        <hr> 
     </div> 
     }
-    <h3 class="header text-center">Total Price: {{ total | currency:"EUR" }}</h3>
+    <div>
+        <div class="row d-flex align-items-center cart">
+            <div class="col-8 text-start">Summary</div>
+            <div class="col-4 text-end">{{(total * 10) / 11 | currency:"EUR"}}</div>
+        </div>
+        <div class="row d-flex align-items-center cart">
+            <div class="col-8 text-start">+ Service</div>
+            <div class="col-4 text-end">{{total / 11 | currency:"EUR"}}</div>
+        </div>
+        <div class="row d-flex align-items-center cart">
+            <div class="col-8 text-start text-danger">- Discount</div>
+            <div class="col-4 text-end text-danger">{{discount | currency:"EUR"}}</div>
+        </div>
+        <hr>
+        <div class="row d-flex align-items-center cart1 fw-bold">
+            <div class="col-8 text-start">Total</div>
+            <div class="col-4 text-end">{{total - discount | currency:"EUR"}}</div>
+        </div>
+    </div>  
 </div>
 

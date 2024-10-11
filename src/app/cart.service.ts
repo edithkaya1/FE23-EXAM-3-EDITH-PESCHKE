@@ -35,7 +35,21 @@ export class CartService {
     this.cartItems.forEach(ele =>{
       total += ele.quantity * ele.price;
     })
-    return total;
+    total = total * 1.1;
+    return total 
+  }
+
+  getDiscount(){
+    let discount = 0;
+    let total1 = 0;
+    this.cartItems.forEach(ele =>{
+      total1 += ele.quantity * ele.price;
+    })
+    total1 = total1 * 1.1;
+    if (total1 > 40){
+      discount = total1 * 0.15;
+    }
+    return discount
   }
 
   onIncreaseQutty(index: number): void{
