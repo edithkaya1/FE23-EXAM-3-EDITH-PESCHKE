@@ -1,0 +1,11 @@
+<div class="container-fluid detail-cont">
+    <img class="card-img" [src]="product.img" alt="this is an image">
+    <hr>
+    <h2 class="header">You selected a product of the category {{product.productType}}</h2>
+    <h4 class="header1">{{ product.brand }}</h4>
+    <p class="text">Product: {{ product.productName }}</p>
+    <p class="text">Available: {{ product.availability }}</p>
+    <p class="text">Price: {{product.price|currency:"EUR"}}</p>
+    <p class="text">Description: {{product.description}}</p>
+    <button (click)="addToCart()" class="btn btn-lg btn-outline-secondary my-3">Buy!</button>
+</div>

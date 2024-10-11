@@ -1,0 +1,39 @@
+.card {
+    width: 25rem;
+    height: auto;
+    /* background-color: rgb(232, 226, 226); */
+}
+
+.cont-1{
+    /* width: 100%;
+    height: 100vh; */
+    background-color: #ebd3cb;
+
+}
+
+.card-header {
+    font-size: 1.5rem;
+    background-color: #9783A9;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.card-img {
+    width: 13rem;
+    height: 15rem;
+    background-color: rgb(232, 226, 226);
+}
+
+.card-title {
+    color: #058240;
+}
+
+.btnDetail {
+    background-color: #D4CF6D; 
+    color: rgb(70, 67, 67); 
+}
+
+.btnBuy {
+    background-color: #567A04; 
+    color: whitesmoke; 
+}

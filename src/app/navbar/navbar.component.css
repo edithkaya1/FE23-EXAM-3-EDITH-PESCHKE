@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+.image {
+    width: 70px;
+    height: auto;
+}
+
+.navbar-nav {
+    font-size: 1.8rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.navbar-nav a:hover {
+    background-color: #9783A9;
+    border-radius: 30%;
+    box-shadow: 5px 5px 10px #a39aa3;
+    transform: scale(1.5);
+    animation: rotateOut;
+    animation-duration: 2s;
+    opacity: 0.5;
+}

@@ -1,0 +1,49 @@
+.home {
+    height: 60vh;
+    width: 100%;
+    background-image: url("https://cdn.pixabay.com/photo/2020/12/16/17/48/computer-5837248_1280.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+.header {
+    font-size: 4rem;
+    padding-top: 50px;
+    justify-content: center;
+    letter-spacing: 0.2rem;
+    color: #D4CF6D;
+    text-shadow: 2px 2px 5px #1a191a;
+    animation: zoomIn;
+    animation-duration: 5s;
+    --animate-delay: 0.9s;
+}
+    
+h2 {
+    font-size: 3rem;
+    justify-content: center;
+    color: #9783A9;
+    text-shadow:
+        1px 1px 2px rgb(20, 19, 19),
+        0 0 4em rgb(84, 73, 84),
+        0 0 3em rgb(56, 52, 55);
+    margin-top: 2px;
+}
+
+h3 {
+    font-size: 2.2rem;
+    justify-content: center;
+    color: #D7A3B6;
+    text-shadow:
+        1px 1px 2px black,
+        0 0 4em rgb(109, 35, 106),
+        0 0 3em rgb(113, 71, 105);
+    margin-top: 2px;
+}
+
+.prodBtn {
+    color: #ede9f0;
+    background-color: #9783A9;
+    justify-content: center;
+
+}
