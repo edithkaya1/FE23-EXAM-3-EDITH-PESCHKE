@@ -12,11 +12,36 @@
 }
 
 .navbar-nav a:hover {
-    background-color: #9783A9;
+    background-color: #FFBB02;
     border-radius: 30%;
     box-shadow: 5px 5px 10px #a39aa3;
     transform: scale(1.5);
     animation: rotateOut;
     animation-duration: 2s;
     opacity: 0.5;
+    text-align: center;
+}
+
+/* Mobile phone */
+@media screen and (max-width: 480px)
+{
+    .navbar-nav a:hover {
+        width: 90px;
+    } 
+    
+    .navbar-nav {
+        font-size: 1.4rem;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 1200px) and (min-width: 481px)
+{
+    .navbar-nav a:hover {
+        width: 90px;
+    } 
+    
+    .navbar-nav {
+        font-size: 1.4rem;
+    }
 }

@@ -15,5 +15,5 @@ export class ProductsComponent {
 
   addToCart(buyProduct:ProductsModel): void{
     this.cartService.onAddToCart(buyProduct);
-    alert("the item added to your cart");}
+    alert("the item was added to your cart");}
 }

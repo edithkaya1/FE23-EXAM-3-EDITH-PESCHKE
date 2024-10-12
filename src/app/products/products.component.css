@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 .card {
     width: 25rem;
     height: auto;
@@ -8,20 +9,20 @@
     /* width: 100%;
     height: 100vh; */
     background-color: #ebd3cb;
-
 }
 
 .header{
     font-family: "Updock", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 3rem;
+    font-size: 4rem;
     letter-spacing: 0.3px;
+    color: #6D5C55;
 }
 
 .card-header {
     font-size: 1.5rem;
-    background-color: #9783A9;
+    background-color: #B0A6A5;
     font-weight: bold;
     color: whitesmoke;
 }
@@ -37,11 +38,24 @@
 }
 
 .btnDetail {
-    background-color: #D4CF6D; 
-    color: rgb(70, 67, 67); 
+    background-color: #E58E00; 
+    color: whitesmoke;
+} 
+
+.btnDetail > a {
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 .btnBuy {
-    background-color: #567A04; 
+    background-color: #B0A6A5; 
     color: whitesmoke; 
+}
+
+.avtext {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.8;
+    color: #E58E00;
 }

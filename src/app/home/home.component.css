@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&family=Space+Grotesk:wght@300..700&family=Spicy+Rice&family=Updock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arimo:ital,wght@0,400..700;1,400..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 .home {
     height: 60vh;
     width: 100%;
-    background-image: url("https://cdn.pixabay.com/photo/2020/12/16/17/48/computer-5837248_1280.jpg");
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/29/11/52/computer-1869306_1280.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,9 +14,9 @@
     padding-top: 50px;
     justify-content: center;
     letter-spacing: 0.2rem;
-    color: #D4CF6D;
-    text-shadow: 2px 2px 5px #1a191a;
-    animation: zoomIn;
+    color: #E58E00;
+    text-shadow: 5px 5px 5px rgb(56, 54, 54);
+    animation: slideInLeft;
     animation-duration: 5s;
     --animate-delay: 0.9s;
     font-family: "Rowdies", sans-serif;
@@ -26,10 +27,10 @@
 h2 {
     font-size: 3rem;
     justify-content: center;
-    color: #9783A9;
+    color: #27AFC9;
     text-shadow:
-        1px 1px 2px rgb(20, 19, 19),
-        0 0 4em rgb(84, 73, 84),
+        1px 1px 2px rgb(199, 191, 191),
+        0 0 4em rgb(43, 38, 43),
         0 0 3em rgb(56, 52, 55);
     margin-top: 2px;
 }
@@ -37,7 +38,7 @@ h2 {
 h3 {
     font-size: 2.2rem;
     justify-content: center;
-    color: #D7A3B6;
+    color: #FFBB02;
     text-shadow:
         1px 1px 2px black,
         0 0 4em rgb(109, 35, 106),
@@ -46,8 +47,63 @@ h3 {
 }
 
 .prodBtn {
-    color: #ede9f0;
-    background-color: #9783A9;
+    color: #101010;
+    background-color: #B0A6A5;
     justify-content: center;
+    font-family: "Prompt", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.3;
+}
 
+/* Mobile phone */
+@media screen and (max-width: 480px)
+{
+    .home {
+        height: 60vh;
+        width: 100%;
+    } 
+
+    .header {
+        font-size: 2rem;
+        padding-top: 50px;
+        justify-content: center;
+        letter-spacing: 0.2rem;
+        text-shadow: 5px 5px 15px #0f0f0f;}
+        
+    h2 {
+        font-size: 1.5rem;
+        margin-top: 2px;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+        margin-top: 2px;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 1200px) and (min-width: 481px)
+{
+    .home {
+        height: 80vh;
+        width: 100%;
+    }  
+
+    .header {
+        font-size: 3rem;
+        padding-top: 50px;
+        justify-content: center;
+        letter-spacing: 0.2rem;
+        text-shadow: 5px 5px 15px #0f0f0f;}
+        
+    h2 {
+        font-size: 2.5rem;
+        margin-top: 2px;
+    }
+    
+    h3 {
+        font-size: 2.3rem;
+        margin-top: 2px;
+    }
 }

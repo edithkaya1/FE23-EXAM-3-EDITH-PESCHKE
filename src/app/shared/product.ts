@@ -58,7 +58,37 @@ export const product: ProductsModel[] = [
     description: "DDOBB 2 Pack Sports Leggings Women High Waist Sports Leggings Women Long With Pockets Gym Leggings Opaque Black Sports Pants Elastic Abdominal Stretch Yoga Pants Fitness Running Pants",
     price: 27.20,
     quantity: 1,
-    availability: true,
+    availability: false,
     img: "https://m.media-amazon.com/images/I/61UjTlL2H-L._AC_SY550_.jpg"   
+},
+{
+    productType: "Sports wear",
+    brand: "Adidas",
+    productName: "T-shirt Ladies",
+    description: "adidas Ladies Tabela 23 Jersey Jersey (Short Sleeve)",
+    price: 13.20,
+    quantity: 1,
+    availability: true,
+    img: "https://m.media-amazon.com/images/I/61ToNXTArAL._AC_SX522_.jpg"   
+},
+{
+    productType: "Videogames",
+    brand: "Nintendo",
+    productName: "Mario rabidds",
+    description: "Mario + Rabbids Sparks of Hope - Nintendo Switch",
+    price: 26.20,
+    quantity: 1,
+    availability: false,
+    img: "https://m.media-amazon.com/images/I/711KPGDK5zL._SY500_.jpg"   
+},
+{
+    productType: "Animals",
+    brand: "YEPPUPPY",
+    productName: "Potato chips",
+    description: "YEPPUPPY sniffing puzzle toy for dogs - dog enrichment, mental stimulation with sound for natural foraging - intelligence toy for dogs - chip and potato toy",
+    price: 21.60,
+    quantity: 1,
+    availability: true,
+    img: "https://m.media-amazon.com/images/I/71PB1zXI4sL._AC_SX679_.jpg"   
 }
 ];

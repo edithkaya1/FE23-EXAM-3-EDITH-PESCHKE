@@ -12,12 +12,14 @@
                   <p class="card-text text-uppercase fw-bold">{{item.productName}}</p>
                   <p class="card-text">{{item.price|currency:"EUR"}}</p>
                   <div class="d-flex justify-content-around">
-                    <a routerLink="/details/{{i}}" class="btn btnDetail btn-lg">Details</a>
-                    <button (click)="addToCart(item)" class="btn btnBuy btn-lg">Order</button>
+                    <button [disabled]="item.availability==false" class="btn btnDetail btn-lg aria-disabled=true" routerLink="/details/{{i}}">
+                        <a routerLink="/details/{{i}}">Details</a> 
+                    </button>
+                    <button [disabled]="item.availability==false" (click)="addToCart(item)" class="btn btnBuy btn-lg">Order</button>
+                    <p *ngIf="item.availability==false" class="avtext">Product not available!</p>
                   </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
 .cont-1 {
-    background-color: #ebd3cb;
-    width: 100%;
     height: 100vh;
+    width: 100%;
+    background-color: #ebd3cb;
 }
 
 .image {
@@ -24,19 +24,73 @@
     font-family: "Updock", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 3rem;
+    font-size: 4rem;
     letter-spacing: 0.3px;
 }
 
 .list{
     font-size: 2rem;
-
-
-
 }
 
 .list > li{
     list-style-type:circle;
     font-size: 1.5rem;
+}
 
+/* Mobile phone */
+@media screen and (max-width: 481px)
+{
+    .cont-1 {
+        height: 180vh;
+    } 
+    
+    .image {
+        width: 250px;
+        height: 200px;
+    }
+
+    .header{
+        font-size: 2.5rem;
+    }
+    
+    .text {
+        font-size: 1rem;   
+    } 
+    
+    .list{
+        font-size: 1.3rem;
+    }
+    
+    .list > li{
+        font-size: 1rem;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 1200px) and (min-width: 481px)
+{
+    .cont-1 {
+        height: 100vh;
+    } 
+    
+    .image {
+        width: 350px;
+        height: 250px;
+    }
+
+    .header{
+        font-size: 3rem;
+    }
+    
+    .text {
+        font-size: 1.2rem;   
+    } 
+    
+    .list{
+        font-size: 1.5rem;
+    }
+    
+    .list > li{
+        font-size: 1.2rem;
+    }
 }

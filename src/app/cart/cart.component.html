@@ -7,7 +7,7 @@
             <img [src]="product.img" class='img-fluid cart-img' alt='this is an image'>
         </div>
         <div class='col-4'>
-            <h5 class='text mb-2 fs-5'>{{product.productName}}</h5>
+            <h5 class='text mb-2'>{{product.productName}}</h5>
         </div>
         <div class='col-3 d-flex'>
             <button (click)="increaseQutty($index)" class='btn btn-success plusBtns'>+</button>
@@ -15,7 +15,7 @@
             <button (click)="decreaseQutty($index)" class='btn btn-success minusBtns'>-</button>
         </div>
         <div class='col-2'>
-            <h5 class='mb-2 rowPrice fs-5'>{{(product.price * product.quantity).toFixed(2)}} €</h5>
+            <h5 class='mb-2 rowPrice'>{{(product.price * product.quantity).toFixed(2)}} €</h5>
         </div>
         <div class='col-1 text-end'>
             <button (click)="deleteItem($index)" class='btn btn-danger deleteBtns'><i class="fa-solid fa-trash"></i></button>

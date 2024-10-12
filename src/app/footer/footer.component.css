@@ -17,10 +17,42 @@
     gap: 5px;
 }
 
+.header {
+    font-size: 2.1rem;
+}
+
 .footer1 {
     font-size: 1.1rem;
 }
 
 .footer2 {
     font-size: 1.3rem;
+}
+
+/* Mobile phone */
+@media screen and (max-width: 481px)
+ {
+    .footer {
+        left: 0;
+        bottom: 0;
+        height: 29vh;
+    }  
+    
+    .header {
+        font-size: 2.5rem;
+     }  
+}
+
+/* Tablet */
+@media screen and (max-width: 1200px) and (min-width: 481px)
+{
+    .footer {
+        left: 0;
+        bottom: 0;
+        height: 30vh;
+    }  
+
+    .header {
+       font-size: 2.5rem;
+    }  
 }
