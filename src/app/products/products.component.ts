@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {ProductsModel} from '../shared/products.model';
 import {product} from '../shared/product';
 import { CartService } from '../cart.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-products',
@@ -15,5 +16,13 @@ export class ProductsComponent {
 
   addToCart(buyProduct:ProductsModel): void{
     this.cartService.onAddToCart(buyProduct);
-    alert("the item was added to your cart");}
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "Your order has been saved",
+      showConfirmButton: false,
+      timer: 1500
+    });
+    // alert("the item was added to your cart");
+    }
 }
